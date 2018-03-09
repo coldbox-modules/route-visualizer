@@ -2,7 +2,7 @@
 
 The ColdBox Route visualizer will map out all your routing tables for any ColdBox 4+ application.  You will visualize the routing and test the routes in the order they fire.
 
-<img src="https://github.com/coldbox-modules/route-visualizer">
+<img src="https://github.com/coldbox-modules/route-visualizer/route-visualizer.png">
 
 ## LICENSE
 Apache License, Version 2.0.
