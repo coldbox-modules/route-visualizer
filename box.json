@@ -1,0 +1,33 @@
+{
+    "name":"ColdBox Route Visualizer",
+    "author":"Ortus Solutions.com <info@ortussolutions.com>",
+    "version":"1.0.0",
+    "location":"coldbox-modules/route-visualizer#v1.0.0",
+    "slug":"route-visualizer",
+    "type":"modules",
+    "homepage":"https://github.com/coldbox-modules/route-visualizer",
+    "documentation":"https://github.com/coldbox-modules/route-visualizer",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/coldbox-modules/route-visualizer"
+    },
+    "shortDescription":"A nice UI module to visualize and test ColdBox Routing",
+    "license":[
+        {
+            "type":"Apache2",
+            "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    ],
+    "contributors":[
+        "Brad Wood <brad@ortussolutions.com>"
+    ],
+    "dependencies":{
+    },
+    "ignore":[
+        "**/.*",
+        "tests",
+        "*/.md"
+    ],
+    "installPaths":{
+    }
+}
