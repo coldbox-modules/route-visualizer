@@ -22,7 +22,9 @@ Apache License, Version 2.0.
 # Instructions
 Just drop into your `modules` folder or use the box-cli to install
 
-`box install route-visualizer`
+`box install route-visualizer --savedev`
+
+Once installed you can now visit the entry point `/route-visualizer` and go :chestnut: visualizing your routes!
 
 ********************************************************************************
 Copyright Since 2005 ColdBox Framework by Ortus Solutions, Corp
