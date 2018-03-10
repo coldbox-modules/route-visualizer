@@ -82,8 +82,17 @@ component {
 			defaultLayout = "Main.cfm"
 		};
 
-		router.route( "/" ).to( "home.index" );
-		router.route( "/:handler/:action?" ).end();
+		// ColdBox 4 compat routing
+		routes = [
+			// Module Entry Point
+			{ pattern="/", handler="home",action="index" },
+			// Convention Route
+			{ pattern="/:handler/:action?" }
+		];
+
+		// ColdBox 5 compat routing
+		//router.route( "/" ).to( "home.index" );
+		//router.route( "/:handler/:action?" ).end();
 
 		// SES Resources
 		resources = [
