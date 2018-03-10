@@ -11,7 +11,7 @@ component{
 		}
 
 		prc.aRoutes          = oRouter.getRoutes();
-		prc.aModuleRoutes    = oRouter.getModuleRoutingTable();
+		prc.aModuleRoutes    = oRouter.getModulesRoutingTable();
 		prc.aNamespaceRoutes = oRouter.getNamespaceRoutingTable();
 
 		event.setView( "home/index" );
