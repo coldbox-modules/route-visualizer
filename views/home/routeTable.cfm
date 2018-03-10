@@ -15,6 +15,11 @@
     <tbody>
     <cfset index = 1>
 	<cfloop array="#args.routes#" index="thisRoute">
+		<cfparam name="thisRoute.handler" default="">
+		<cfparam name="thisRoute.action" default="">
+		<cfparam name="thisRoute.event" default="">
+		<cfparam name="thisRoute.redirect" default="">
+		<cfparam name="thisRoute.view" default="">
 		<cfset thisRoute.id = hash( thisRoute.toString() )>
         <tr>
             <td>
