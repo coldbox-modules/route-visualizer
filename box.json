@@ -1,7 +1,7 @@
 {
     "name":"ColdBox Route Visualizer",
     "author":"Ortus Solutions.com <info@ortussolutions.com>",
-    "version":"1.0.0",
+    "version":"1.1.0",
     "location":"coldbox-modules/route-visualizer#v1.0.0",
     "slug":"route-visualizer",
     "type":"modules",
@@ -21,13 +21,11 @@
     "contributors":[
         "Brad Wood <brad@ortussolutions.com>"
     ],
-    "dependencies":{
-    },
+    "dependencies":{},
     "ignore":[
         "**/.*",
         "tests",
         "*/.md"
     ],
-    "installPaths":{
-    }
+    "installPaths":{}
 }
