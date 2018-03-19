@@ -45,6 +45,10 @@
 				</cfif>
 
 				<cfif thisRoute.action.len() ?: 0>
+					<strong>Action:</strong> #thisRoute.action#
+				</cfif>
+
+				<cfif isStruct( thisRoute.action )>
 					<strong>Action:</strong> #serializeJSON( thisRoute.action )#
 				</cfif>
 
