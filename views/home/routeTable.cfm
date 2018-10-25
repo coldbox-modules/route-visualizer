@@ -45,9 +45,9 @@
 				</cfif>
 
 				<cfif isStruct( thisRoute.action )>
-					<strong>Action:</strong> #thisRoute.action.toString()#
-				<cfelseif thisRoute.action.len() ?: 0>
 					<strong>Action:</strong> #serializeJSON( thisRoute.action )#
+				<cfelseif thisRoute.action.len() ?: 0>
+					<strong>Action:</strong> #thisRoute.action.toString()#
 				</cfif>
 
 				<cfif thisRoute.event.len() ?: 0>
