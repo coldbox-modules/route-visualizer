@@ -5,21 +5,25 @@ The ColdBox Route visualizer will map out all your routing tables for any ColdBo
 <img src="https://github.com/coldbox-modules/route-visualizer/blob/master/route-visualizer.png?raw=true" class="img-responsive">
 
 ## LICENSE
+
 Apache License, Version 2.0.
 
 ## IMPORTANT LINKS
+
 - Source: https://github.com/coldbox-modules/route-visualizer
 - Issues: https://github.com/coldbox-modules/route-visualizer/issues
 - ForgeBox: http://forgebox.io/view/route-visualizer
 
 ## SYSTEM REQUIREMENTS
-- Lucee 4.5+
-- ColdFusion 11+
+
+- Lucee 5+
+- Adobe ColdFusion 11+
 - ColdBox 4+
 
 ---
 
 # Instructions
+
 Just drop into your `modules` folder or use the box-cli to install
 
 `box install route-visualizer --savedev`
@@ -30,6 +34,7 @@ Once installed you can now visit the entry point `/route-visualizer` and go :che
 Copyright Since 2005 ColdBox Framework by Ortus Solutions, Corp
 www.ortussolutions.com
 ********************************************************************************
+
 #### HONOR GOES TO GOD ABOVE ALL
 Because of His grace, this project exists. If you don't like this, then don't read it, its not for you.
 

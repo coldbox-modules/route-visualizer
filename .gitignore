@@ -1,32 +1,14 @@
-# OS + IDE
-.DS_Store
-/settings.xml
-.project
-.settings/
 .vscode
 
-# Testing Logs
-test-harness/logs/*.log
-test-harness/logs
-test-harness/test/logs
-test-harness/test/specs/integration/logs
-testing/cases/logging/tmp
-testing/resources/logs/*.log
-tests/automation/results
-tests/automation/results-*
-tests/logs
-tests/suites/loadtests/settings.xml
+.artifacts/**
+.tmp/**
 
-# Build artifacts
-build-coldbox
-build/build.number
-artifacts/*
+test-harness/.engine/**
+test-harness/coldbox/**
+test-harness/docbox/**
+test-harness/testbox/**
+test-harness/logs/**
+test-harness/modules/**
 
-# Dependencies
-testbox/*
-apidocs/docbox/*
-ApplicationTemplates/*
-tests/suites/loadtests/logs
-
-# Custom Settings
-test-harness/config/runtime.properties.cfm
+# log files
+logs/**
