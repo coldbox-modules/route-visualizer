@@ -23,7 +23,7 @@
     ],
     "ignore":[
         "**/.*",
-        "tests",
+        "test-harness",
         "*/.md"
     ],
 	"scripts":{
