@@ -111,9 +111,16 @@ component{
         buildID=createUUID(),
         branch="development"
     ){
+		// Stable builds are 1.2.3+56 while unstable builds are 1.2.3-snapshot
+		if( arguments.branch == "master" ) {
+			arguments.version &= '+#arguments.buildID#';
+		} else {
+			arguments.version &= '-snapshot';
+		}
+
         // Build Notice ID
         print.line()
-            .boldMagentaLine( "Building #arguments.projectName# v#arguments.version#+#arguments.buildID# from #cwd# using the #arguments.branch# branch." )
+            .boldMagentaLine( "Building #arguments.projectName# v#arguments.version# from #cwd# using the #arguments.branch# branch." )
             .toConsole();
 
         // Prepare exports directory
@@ -129,7 +136,7 @@ component{
         copy( variables.cwd, variables.projectBuildDir );
 
         // Create build ID
-        fileWrite( "#variables.projectBuildDir#/#projectName#-#version#+#buildID#", "Built with love on #dateTimeFormat( now(), "full")#" );
+        fileWrite( "#variables.projectBuildDir#/#projectName#-#version#", "Built with love on #dateTimeFormat( now(), "full")#" );
 
         // Updating Placeholders
         print.greenLine( "Updating version identifier to #arguments.version#" ).toConsole();
@@ -141,13 +148,9 @@ component{
             )
             .run();
 
-        print.greenLine( "Updating build identifier to #arguments.buildID#" ).toConsole();
-        command( 'tokenReplace' )
-            .params(
-                path = "/#variables.projectBuildDir#/**",
-                token = ( arguments.branch == "master" ? "@build.number@" : "+@build.number@" ),
-                replacement = ( arguments.branch == "master" ? arguments.buildID : "-snapshot" )
-            )
+        print.greenLine( "Updating box.json version to #arguments.version#" ).toConsole();
+        command( 'package version' )
+            .params( arguments.version )
             .run();
 
         // zip up source
