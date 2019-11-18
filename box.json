@@ -1,7 +1,7 @@
 {
     "name":"ColdBox Route Visualizer",
     "author":"Ortus Solutions.com <info@ortussolutions.com>",
-    "version":"1.3.0",
+    "version":"1.4.0",
     "location":"https://downloads.ortussolutions.com/ortussolutions/coldbox-modules/route-visualizer/@build.version@/route-visualizer-@build.version@.zip",
     "slug":"route-visualizer",
     "type":"modules",
