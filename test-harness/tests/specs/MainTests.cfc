@@ -11,6 +11,17 @@
 		super.afterAll();
 	}
 
+
+    function get(
+        string route = "",
+        struct params = {},
+        struct headers = {},
+        boolean renderResults = true
+    ) {
+        arguments.method = "GET";
+        return variables.request( argumentCollection = arguments );
+    }
+
 /*********************************** BDD SUITES ***********************************/
 
 	function run(){
