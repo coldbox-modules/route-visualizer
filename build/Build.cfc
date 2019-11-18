@@ -149,8 +149,8 @@ component{
             .run();
 
         print.greenLine( "Updating box.json version to #arguments.version#" ).toConsole();
-        command( 'package version' )
-            .params( arguments.version )
+        command( 'package set' )
+            .params( version=arguments.version )
             .run();
 
         // zip up source
