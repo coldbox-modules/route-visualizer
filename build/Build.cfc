@@ -118,6 +118,12 @@ component{
 			arguments.version &= '-snapshot';
 		}
 
+        print.greenLine( "Updating box.json version to #arguments.version#" ).toConsole();
+        command( 'package set' )
+            .params( version=arguments.version )
+            .run();
+		
+
         // Build Notice ID
         print.line()
             .boldMagentaLine( "Building #arguments.projectName# v#arguments.version# from #cwd# using the #arguments.branch# branch." )
@@ -147,12 +153,7 @@ component{
                 replacement = arguments.version
             )
             .run();
-
-        print.greenLine( "Updating box.json version to #arguments.version#" ).toConsole();
-        command( 'package version' )
-            .params( arguments.version )
-            .run();
-
+            
         // zip up source
         var destination = "#variables.exportsDir#/#projectName#-#version#.zip";
         print.greenLine( "Zipping code to #destination#" ).toConsole();
