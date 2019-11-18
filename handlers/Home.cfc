@@ -5,7 +5,7 @@ component{
 
 	function index( event, rc, prc ){
 		if( wirebox.containsInstance( name="router@coldbox" ) ){
-			var oRouter = getInstance( "router@coldbox" );
+			var oRouter = controller.getRoutingService().getRouter();
 			prc.aModuleRoutes = oRouter.getModuleRoutingTable();
 		} else {
 			var oRouter = getInterceptor( "SES" );
