@@ -7,7 +7,7 @@
 	<input type="text" name="filter" id="filter" placeholder="Filter Routes" autofocus class="form-control">
 </div>
 
-#renderView(
+#view(
     view = "home/routeTable",
     args = { routes = prc.aRoutes, type = "root" }
 )#
