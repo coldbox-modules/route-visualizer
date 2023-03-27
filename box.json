@@ -37,6 +37,6 @@
         "format:check":"cfformat check handlers,models,test-harness/tests/,ModuleConfig.cfc ./.cfformat.json"
     },
 	"testbox":{
-        "runner":"/tests/runner.cfm"
+        "runner":"http://localhost:60299/tests/runner.cfm"
     }
 }
