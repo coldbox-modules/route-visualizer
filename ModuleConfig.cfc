@@ -30,6 +30,9 @@ component {
 		// module settings - stored in modules.name.settings
 		settings = {};
 
+		// Home Route
+		router.route( "/" ).to( "Home.index" );
+
 		// Layout Settings
 		layoutSettings = { defaultLayout : "Main.cfm" };
 	}
