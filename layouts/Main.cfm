@@ -22,7 +22,7 @@
 
 		<body>
 			<div class="container-fluid">
-				#renderView()#
+				#view()#
 			</div>
 
 			<!-- Optional JavaScript -->
