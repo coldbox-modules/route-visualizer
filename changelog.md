@@ -9,6 +9,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Adobe 2023 Support
+- Lucee 6 Support
+- More testing coverage
+
+### Fixed
+
+- Update all `renderView()` calls to use `view()` instead
+
+## [2.1.0]
+
+### Added
+
+- Named route visualizations
+- Bootsrap latest updates
+- UI Updates
+
 ## [2.0.0]
 
 ### Added

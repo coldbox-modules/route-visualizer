@@ -1,7 +1,7 @@
 {
     "name":"ColdBox Route Visualizer",
     "author":"Ortus Solutions.com <info@ortussolutions.com>",
-    "version":"2.0.0",
+    "version":"2.2.0",
     "location":"https://downloads.ortussolutions.com/ortussolutions/coldbox-modules/route-visualizer/@build.version@/route-visualizer-@build.version@.zip",
     "slug":"route-visualizer",
     "type":"modules",
@@ -22,21 +22,30 @@
         "Brad Wood <brad@ortussolutions.com>"
     ],
     "ignore":[
-		"**/.*",
+        "**/.*",
         "test-harness",
-		"/server*.json"
+        "/server*.json"
     ],
     "scripts":{
-        "setupTemplate": "task run taskFile=build/SetupTemplate.cfc",
-		"build:module":"task run taskFile=build/Build.cfc :projectName=`package show slug` :version=`package show version`",
-		"build:docs":"task run taskFile=build/Build.cfc target=docs :projectName=`package show slug` :version=`package show version`",
+        "setupTemplate":"task run taskFile=build/SetupTemplate.cfc",
+        "build:module":"task run taskFile=build/Build.cfc :projectName=`package show slug` :version=`package show version`",
+        "build:docs":"task run taskFile=build/Build.cfc target=docs :projectName=`package show slug` :version=`package show version`",
         "install:dependencies":"install && cd test-harness && install",
-		"release":"recipe build/release.boxr",
-        "format":"cfformat run handlers,models,test-harness/tests/,ModuleConfig.cfc --overwrite",
-        "format:watch":"cfformat watch handlers,models,test-harness/tests/,ModuleConfig.cfc ./.cfformat.json",
-        "format:check":"cfformat check handlers,models,test-harness/tests/,ModuleConfig.cfc ./.cfformat.json"
+        "release":"recipe build/release.boxr",
+        "format":"cfformat run helpers,models,test-harness/tests/,ModuleConfig.cfc --overwrite",
+        "format:watch":"cfformat watch helpers,models,test-harness/tests/,ModuleConfig.cfc ./.cfformat.json",
+        "format:check":"cfformat check helpers,models,test-harness/tests/,ModuleConfig.cfc ./.cfformat.json",
+		"start:lucee" : "server start serverConfigFile=server-lucee@5.json",
+		"start:2018" : "server start serverConfigFile=server-adobe@2018.json",
+		"start:2021" : "server start serverConfigFile=server-adobe@2021.json",
+		"stop:lucee" : "server stop serverConfigFile=server-lucee@5.json",
+		"stop:2018" : "server stop serverConfigFile=server-adobe@2018.json",
+		"stop:2021" : "server stop serverConfigFile=server-adobe@2021.json",
+		"logs:lucee" : "server log serverConfigFile=server-lucee@5.json --follow",
+		"logs:2018" : "server log serverConfigFile=server-adobe@2018.json --follow",
+		"logs:2021" : "server log serverConfigFile=server-adobe@2021.json --follow"
     },
-	"testbox":{
+    "testbox":{
         "runner":"http://localhost:60299/tests/runner.cfm"
     }
 }
