@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- BoxLang support
 - Adobe 2023 Support
 - Lucee 6 Support
 - More testing coverage

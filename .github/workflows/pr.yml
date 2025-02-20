@@ -6,17 +6,17 @@ on:
       - "main"
       - "master"
       - "development"
-      - "releases/v*"
   pull_request:
     branches:
-      - "releases/v*"
       - development
 
 jobs:
   tests:
     uses: ./.github/workflows/tests.yml
+    secrets: inherit
 
-  formatCheck:
+  # Format PR
+  format_check:
     name: Checks Source Code Formatting
     runs-on: ubuntu-24.04
     steps:
