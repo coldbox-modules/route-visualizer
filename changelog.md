@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.2.0] - 2025-02-20
+
 ## [2.2.0] - 2024-05-09
 
 ### Added
@@ -65,6 +67,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First Release
 
-[Unreleased]: https://github.com/coldbox-modules/route-visualizer/compare/v2.2.0...HEAD
-
-[2.2.0]: https://github.com/coldbox-modules/route-visualizer/compare/588d98d21e1f5893ff0baf83ed9001127a48e8ab...v2.2.0
+[unreleased]: https://github.com/coldbox-modules/route-visualizer/compare/v2.2.0...HEAD
+[2.2.0]: https://github.com/coldbox-modules/route-visualizer/compare/v2.2.0...v2.2.0
