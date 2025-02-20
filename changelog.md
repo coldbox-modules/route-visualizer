@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Update to support BoxLang and CFML layouts
 - Update all `renderView()` calls to use `view()` instead
 
 ## [2.1.0]
