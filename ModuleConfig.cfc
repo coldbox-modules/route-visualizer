@@ -34,7 +34,7 @@ component {
 		router.route( "/" ).to( "Home.index" );
 
 		// Layout Settings
-		layoutSettings = { defaultLayout : "Main.cfm" };
+		layoutSettings = { defaultLayout : "Main" };
 	}
 
 	/**

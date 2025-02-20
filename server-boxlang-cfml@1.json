@@ -1,0 +1,35 @@
+{
+    "app":{
+        "cfengine":"boxlang@be",
+        "serverHomeDirectory":".engine/boxlang"
+    },
+    "name":"route-visualizer-boxlang@1",
+    "force":true,
+    "openBrowser":false,
+    "web":{
+        "directoryBrowsing":true,
+        "http":{
+            "port":"60299"
+        },
+        "rewrites":{
+            "enable":"true"
+        },
+        "webroot":"test-harness",
+        "aliases":{
+            "/moduleroot/route-visualizer":"./"
+        }
+    },
+    "JVM":{
+        "heapSize":"1024",
+        "javaVersion":"openjdk21_jre",
+        "args":"-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8888"
+    },
+    "cfconfig":{
+        "file":".cfconfig.json"
+    },
+    "env":{
+    },
+    "scripts":{
+        "onServerInitialInstall":"install bx-compat-cfml --noSave"
+    }
+}
